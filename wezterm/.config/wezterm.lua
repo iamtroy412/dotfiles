@@ -5,13 +5,14 @@ local function font_with_fallback(name, params)
 	return wezterm.font_with_fallback(names, params)
 end
 
-local font_name = "Hack Nerd Font"
+local font_name = "JetBrains Mono ExtraLight"
 
 return {
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
 
 	color_scheme = 'Catppuccin Mocha',
+	-- color_scheme = 'GruvboxDark',
 
 	-- Font config
 	font = font_with_fallback(font_name),
