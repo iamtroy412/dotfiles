@@ -1,6 +1,6 @@
 #!/usr/bin/zsh
 if [[ -z $STOW_FOLDERS ]]; then
-    STOW_FOLDERS="btop,hypr,nvim,tmux,wezterm"
+    STOW_FOLDERS="btop,hypr,nvim,swaylock,tmux,wezterm"
 fi
 
 if [[ -z $DOTFILES ]]; then
