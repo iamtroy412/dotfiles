@@ -13,6 +13,7 @@
     "modules-center": ["hyprland/window"],
     "modules-right": [
         "tray",
+        "network",
         "cpu",
         "memory",
         "custom/updates",
@@ -54,17 +55,19 @@
     },
     "network": {
         "interface": "enp0s31f6",
-        "format": "{ifname}",
-        "format-ethernet": "{ifname} ",
+        "format": "{bandwidthDownBits}",
+        "format-ethernet": "{bandwidthDownBits} 󰇚  {bandwidthUpBits} 󰕒 ",
         "tooltip-format": "{ifname}",
-        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-ethernet": "{ifname} {ipaddr} ",
         "tooltip-format-disconnected": "Disconnected",
+        "interval": 10,
         "max-length": 50
     },
     "custom/updates": {
-        "exec": "(yay -Qua) | wc -l",
+        "exec": "(yay -Quq) | wc -l",
         "interval": 7200,
-        "format": " {}"
+        "icon-size": 23,
+        "format": " {}"
     },
     "tray": {
         "icon-size": 13,
