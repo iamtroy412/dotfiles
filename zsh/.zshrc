@@ -111,3 +111,6 @@ alias vim='nvim'
 
 bindkey '^l' autosuggest-accept
 bindkey '^e' autosuggest-execute
+
+# Add go bin
+export PATH="$HOME/go/bin:$PATH"

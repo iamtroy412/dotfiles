@@ -52,6 +52,10 @@ return {
 		bottom = 5,
 	},
 
+    set_environment_variables = {
+      COLORTERM="truecolor",
+   },
+
 	-- Tab Bar
 	enable_tab_bar = true,
 	hide_tab_bar_if_only_one_tab = true,
