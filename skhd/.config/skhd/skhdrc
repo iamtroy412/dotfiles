@@ -131,3 +131,7 @@ cmd + ctrl - h : yabai -m window --warp west
 
 # options: zoom-parent, zoom-fullscreen, native-fullscreen
 cmd + ctrl - f : yabai -m window --toggle zoom-fullscreen
+
+# Balance out all windows both horizontally and vertically
+#   to occupy the same space
+cmd + ctrl - s : yabai -m space --balance
