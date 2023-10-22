@@ -107,3 +107,27 @@
 
 # open terminal, blazingly fast compared to iTerm/Hyper
 cmd - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
+
+# focus window in direction of focused window (options: north, east, south, west)
+cmd - l : yabai -m window --focus east
+cmd - h : yabai -m window --focus west
+cmd - j : yabai -m window --focus south
+cmd - k : yabai -m window --focus north
+
+# toggle whether the focused window should be tiled (only on bsp spaces)
+cmd - space : yabai -m window --toggle float
+
+# move window to space X and focus
+cmd + ctrl - 1 : yabai -m window --space 1 --focus
+cmd + ctrl - 2 : yabai -m window --space 2 --focus
+cmd + ctrl - 3 : yabai -m window --space 3 --focus
+
+# warp at window in direction of focused window
+#   (options: north, east, south, west)
+cmd + ctrl - k : yabai -m window --warp north
+cmd + ctrl - j : yabai -m window --warp south
+cmd + ctrl - l : yabai -m window --warp east
+cmd + ctrl - h : yabai -m window --warp west
+
+# options: zoom-parent, zoom-fullscreen, native-fullscreen
+cmd + ctrl - f : yabai -m window --toggle zoom-fullscreen
